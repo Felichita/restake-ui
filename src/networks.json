@@ -3,11 +3,9 @@
     "name": "osmosis",
     "ownerAddress": "osmovaloper1u5v0m74mql5nzfx2yh43s2tke4mvzghr6m2n5t",
     "maxPerDay": 1,
-    "apiVersions": {
-      "gov": "v1beta1"
-    },
     "authzAminoExecPreventTypes": [
-      "/cosmos.gov."
+      "/cosmos.gov.",
+      "/cosmos.distribution.v1beta1.MsgWithdrawValidatorCommission"
     ]
   },
   {
@@ -176,7 +174,13 @@
   },
   {
     "name": "kujira",
-    "ownerAddress": "kujiravaloper1vue5lawr3s0au9zj0aqeft5aknx6cjq6w5ghca"
+    "ownerAddress": "kujiravaloper1vue5lawr3s0au9zj0aqeft5aknx6cjq6w5ghca",
+    "disabledWallets": [
+      "cosmostation"
+    ],
+    "authzAminoExecPreventTypes": [
+      "/cosmos.distribution.v1beta1.MsgWithdrawValidatorCommission"
+    ]
   },
   {
     "name": "genesisl1",
@@ -215,7 +219,10 @@
   },
   {
     "name": "teritori",
-    "ownerAddress": "torivaloper1d5u07lhelk6lal44a0myvufurvsqk5d499h9hz"
+    "ownerAddress": "torivaloper1d5u07lhelk6lal44a0myvufurvsqk5d499h9hz",
+    "authzAminoExecPreventTypes": [
+      "/cosmos.distribution.v1beta1.MsgWithdrawValidatorCommission"
+    ]
   },
   {
     "name": "rebus"
@@ -269,7 +276,10 @@
   },
   {
     "name": "coreum",
-    "ownerAddress": "corevaloper1py9v5f7e4aaka55lwtthk30scxhnqfa6agwxt8"
+    "ownerAddress": "corevaloper1py9v5f7e4aaka55lwtthk30scxhnqfa6agwxt8",
+    "authzAminoExecPreventTypes": [
+      "/cosmos.distribution.v1beta1.MsgWithdrawValidatorCommission"
+    ]
   },
   {
     "name": "nois",
@@ -277,7 +287,10 @@
   },
   {
     "name": "omniflixhub",
-    "ownerAddress": "omniflixvaloper19d782trtcj4yq9lm7nxy3xs3xjg8vjktn3sjsd"
+    "ownerAddress": "omniflixvaloper19d782trtcj4yq9lm7nxy3xs3xjg8vjktn3sjsd",
+    "authzAminoExecPreventTypes": [
+      "/cosmos.distribution.v1beta1.MsgWithdrawValidatorCommission"
+    ]
   },
   {
     "name": "empowerchain",
@@ -300,5 +313,15 @@
   {
     "name": "celestia",
     "ownerAddress": "celestiavaloper1dsyuamue2p3l0z753pyrtegs52ftrg960re06j"
+  },
+  {
+    "name": "dymension",
+    "ownerAddress": "dymvaloper1z2uv28s9ewxg0ch45m2v27ke76tf7hvw398ggu"
+  },
+  {
+    "name": "humans"
+  },
+  {
+    "name": "saga"
   }
 ]
